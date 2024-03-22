@@ -50,14 +50,33 @@ Pongs de la fury:Based on the original game where players control paddles on eit
 	The objective is to score points by causing the ball to pass the opponent's paddle without them being able to return it.
 	It will go up until the score of 3.
  </h2>
-<h3>Technology Overview </h3>
+<h3>Technology Overview:
+Turtle Graphics Library: Turtle is a Python feature like a drawing board, which lets you command a turtle 
+to draw all over it. This library is used to create the game window and all graphical elements within it.
+Game setup: The game window is created with a title of "Pong de la Fury," a black background color,
+and a size of 800x600 pixels. The `tracer(0)` function call turns off animation rendering, which improves performance.
+Game Elements:
+Paddles: Two rectangular paddles (paddle_a and paddle_b) are created using Turtle. 
+They are positioned on the left and right sides of the screen, respectively, and are controlled by the players.
+Ball: 
+A square-shaped ball is created at the center of the screen. Its initial movement direction (dx and dy) is set to move diagonally.
+Player Controls: Keyboard bindings are set up to control the movement of the paddles. 
+Players can use the 'w' and 's' keys for paddle_a and the up and down arrow keys for paddle_b.
+Main Game Loop: The game runs within an infinite loop. Inside this loop, 
+the game continuously updates the screen, moves the ball, checks for collisions with the borders, 
+and handles collisions with the paddles.
+Collision Detection:
+	Border Checking: If the ball hits the top or bottom border, its vertical direction (dy) is reversed. If it goes beyond the left or right border, it returns to the center with a change in horizontal direction (dx).
+   Paddle and Ball Collisions: If the ball collides with a paddle, it reverses its horizontal direction (dx), simulating a bounce.
+ </h3>
 <h4>Proposal Last Updated 3/21/24 </h4>
-<h5>Feature List:Key features:
+<h5>Feature List:
 Paddles:Players control paddles on either side of the screen which they use to hit the ball.
 Ball:a ball move back and fourth between the paddles and players must hit it with their paddles to keep it in play.
 Scoring:points are scored when a player hits the ball past their opponents paddle.
 Collision Detection: the fame includes collision detection to determine when the ball collides with a paddle or the boundaries of the screen.
 Speed variation:as the game progress the ball goes faster.  </h5>
-<h5>Future Feature List </h5>
-<h6>Basic Technical Features</h6>
+<h5>Future Feature List: ball will be on fire and it will be sped up to make it more challenging.
+There will be the ability to play two players.</h5>
+<h6>Basic Technical Features:</h6>
 <h7>Advanced Technical Features </h7>
